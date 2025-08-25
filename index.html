@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--干嘛翻人家代码！很没礼貌诶知不知道！真是的……-->
+   <head>
+      <meta charset="UTF-8">
+      <title>Ready on Journey</title>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/timer.css">
+      <meta name="viewport" content="width=device-width, initial-scale=0.7">
+   </head>
+   <body>
+      <div class="app-container">
+         <button id="toggleSidebar" class="sidebar-toggle">☰</button>
+         <div class="sidebar">
+            <h1>Ready on Journey</h1>
+            <div id="scene-buttons"></div>
+            <div id="character-select" class="char-select-group">
+               <h2 style="font-size: 16px; margin-top: 30px;">Practice Highlight</h2>
+            </div>
+            <!--
+                <div id="qrcode-share" class="qrcode-share"><h2 style="font-size: 16px; margin-top: 30px;">Share this Website</h2><canvas id="qrcode" style="display: block; margin: 0 auto;"></canvas><h2 style="font-size: 12px; text-align: center;">This QRCode accessible only to devices on the Wi-Fi: </h2><h1 style="text-align: center;"><span id="currentWifi"></span></h1><p style="font-size: 12px; text-align: center;">
+                        This site uses <strong>localhost</strong>, which keeps everything private on device. 
+                        It doesn't share content over the internet—only those connected to the same Wi-Fi can access it.
+                    </p></div>
+                -->
+            <div>
+               <h2 style="font-size: 16px; margin-top: 30px;">Hard Refresh</h2>
+               <p style="font-size: 12px; text-align: center;"> Normally, browsers store old files to speed things up. <br> If the website appears outdated or isn't working properly, try a hard refresh to load the latest version by clicking the link below. </p>
+               <h2 style="font-size: 16px; cursor: pointer; text-decoration: underline; text-align: center;" onclick="hardRefresh()">> Click Me< </h2>
+            </div>
+         </div>
+         <div class="main-content">
+            <div id="scene-container"></div>
+         </div>
+         <div id="timerBox">
+            <div id="timeDisplay">00:00.00</div>
+            <div id="records"></div>
+            <div class="btnRow">
+               <button id="startBtn" onclick="startTimer()">开始</button>
+               <button id="stopBtn" onclick="pauseTimer()">停止</button>
+               <button id="resetBtn" onclick="resetTimer()">重置</button>
+               <button id="markBtn" onclick="markTime()">记录点</button>
+            </div>
+         </div>
+         <div class="watermark2">
+            <div class="details"> Team members: Lau Qi Xin, Lee Zi Ying, Cheng Yuan Qi, Tee Jin Yong, Ong Loong Choon, Tan Lik Xian </div>
+            <span class="toggle">© Radioplay Project Team. All rights reserved. ▸</span>
+         </div>
+         <div class="watermark">Story by Team ( Lau Qi Xin, Lee Zi Ying, Cheng Yuan Qi, Tee Jin Yong, Ong Loong Choon, Tan Lik Xian) • Site by yuanqi</div>
+      </div>
+      <script src="js/index.js"></script>
+      <!--<script src="js/qrcode.js"></script><script src="cdn/qrcode.min.js"></script>-->
+      <script>
+         console.log("你要打什么危险的东西吗？不要乱来哦……");
+         document.getElementById('toggleSidebar').addEventListener('click', () => {
+            document.querySelector('.app-container').classList.toggle('collapsed');
+         });
+         document.querySelector('.main-content').addEventListener('click', () => {
+            if (window.innerHeight > window.innerWidth) {
+               document.querySelector('.app-container').classList.add('collapsed');
+            }
+         });
+
+         function hardRefresh() {
+            location.reload(true); // `true` 参数在旧浏览器中表示“忽略缓存”，但现代浏览器忽略这个参数
+         }
+         document.querySelector('.watermark2 .toggle').addEventListener('click', () => {
+            document.querySelector('.watermark2').classList.toggle('open');
+         });
+      </script>
+      <script src="js/timer.js"></script>
+   </body>
+</html>

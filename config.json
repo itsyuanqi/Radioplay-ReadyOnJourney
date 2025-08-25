@@ -1,0 +1,147 @@
+{
+  "id_map": {
+    "P": "Prince Sebastian",
+    "King": "King Edward",
+    "S": "Squirrel Pippy",
+    "M": "Mage Magwin",
+    "B": "Blacksmith Thomas",
+    "K": "Knight Felix",
+    "N": "Narrator",
+    
+    "花茶": "？？？",
+    "橘子": "？？？",
+    "小秋": "？？？",
+    "可可": "？？？",
+    "合": "？？？",
+    "???": "？？？"
+  },
+  "scene": {
+    "0": ["script_info", "Welcome"],
+    "I": ["script_info", "Info"],
+    "A": ["script_about", "About"],
+    "1": ["script_scene_01", " The annihilation of Kingdom Elbert"],
+    "2": ["script_scene_02", "The road to the savior"],
+    "3": ["script_scene_03", "The raid of the Dark Force"],
+    "4": ["script_scene_04", "The Combat Plan"],
+    "5": ["script_scene_05", " The Vengeance from the five legends"],
+    "6": ["script_scene_06", "Peace for all"]
+  },
+  "member_map": {
+    "P": {
+      "name": "Lau Qi Xin",
+      "character": "Prince Sebastian",
+      "color": "#FF0000",
+      "shownHighlightSelection": true,
+      "avatar": "Prince.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffa1a1",
+      "avatarBackgroundColor": "#ffd9d9"
+    },
+    "King": {
+      "name": "Lau Qi Xin",
+      "character": "King Edward",
+      "color": "#FF0000",
+      "shownHighlightSelection": true,
+      "avatar": "King.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffa1a1",
+      "avatarBackgroundColor": "#ffd9d9"
+    },
+    "S": {
+      "name": "Lee Zi Ying",
+      "character": "Squirrel Pippy",
+      "color": "#D86DCB",
+      "shownHighlightSelection": true,
+      "avatar": "Squirrel.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffb8f7",
+      "avatarBackgroundColor": "#ffdbfb"
+    },
+    "M": {
+      "name": "Cheng Yuan Qi",
+      "character": "Mage Magwin",
+      "color": "#0B749D",
+      "shownHighlightSelection": true,
+      "avatar": "Mage.png",
+      "silhouette": true,
+      "silhouetteColor": "#9ce3ff",
+      "avatarBackgroundColor": "#d1f2ff"
+    },
+    "B": {
+      "name": "Tee Jin Yong",
+      "character": "Blacksmith Thomas",
+      "color": "#00B050",
+      "shownHighlightSelection": true,
+      "avatar": "Blacksmith.png",
+      "silhouette": true,
+      "silhouetteColor": "#8fffc2",
+      "avatarBackgroundColor": "#d1ffe6"
+    },
+    "K": {
+      "name": "Ong Loong Choon",
+      "character": "Knight Felix",
+      "color": "#E97132",
+      "shownHighlightSelection": true,
+      "avatar": "Knight.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffc09e",
+      "avatarBackgroundColor": "#ffdcc9"
+    },
+    "N": {
+      "name": "Tan Lik Xian",
+      "character": "Narrator",
+      "color": "#60CAF3",
+      "shownHighlightSelection": true,
+      "avatar": "Narrator.png",
+      "silhouette": true,
+      "silhouetteColor": "#b0e9ff",
+      "avatarBackgroundColor": "#e3f7ff"
+    },
+
+    "花茶": {
+      "name": "虚拟人物",
+      "character": "",
+      "color": "#ffa1a1",
+      "avatar": "花茶.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffa1a1"
+    },
+    "橘子": {
+      "name": "虚拟人物",
+      "character": "",
+      "color": "#ffa666",
+      "avatar": "橘子.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffcda8",
+      "avatarBackgroundColor": "#ffe6d4"
+    },
+    "小秋": {
+      "name": "虚拟人物",
+      "character": "",
+      "color": "#f0ce60",
+      "avatar": "小秋.png",
+      "silhouette": true,
+      "silhouetteColor": "#ffeba8",
+      "avatarBackgroundColor": "#fff9e6"
+    },
+    "可可": {
+      "name": "虚拟人物",
+      "character": "",
+      "color": "#4dc9c5",
+      "avatar": "可可.png",
+      "silhouette": true,
+      "silhouetteColor": "#bafffd",
+      "avatarBackgroundColor": "#edfffe"
+    },
+    "合": {
+      "name": "虚拟人物",
+      "character": "",
+      "color": "#f1a1ff"
+    },
+    "???": {
+      "name": "虚拟人物",
+      "character": "",
+      "color": "#61c94d"
+    }
+  }
+}

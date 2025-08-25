@@ -1,0 +1,75 @@
+#timerBox {
+    font-family: 'Courier New', monospace;
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 1rem 1.2rem;
+    border-radius: 16px;
+    font-size: 15px;
+    color: #3a3a3a;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    z-index: 99;
+
+    opacity: 0.5;
+    cursor: grab;
+    /* 鼠标提示可拖动 */
+}
+
+#timerBox:hover {
+    opacity: 1;
+}
+
+#timerBox.dragging {
+    cursor: grabbing;
+}
+
+#timerBox:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#timeDisplay {
+    font-size: 45px;
+    font-weight: bold;
+    color: #4a3f8c;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+#records {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
+    max-height: 100px;
+    overflow-y: auto;
+    line-height: 1.4;
+}
+
+.btnRow {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+}
+
+button {
+    background: rgba(74, 63, 140, 0.1);
+    color: #4a3f8c;
+    border: 1px solid rgba(74, 63, 140, 0.2);
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: rgba(74, 63, 140, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}

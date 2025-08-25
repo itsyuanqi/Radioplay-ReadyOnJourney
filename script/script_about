@@ -1,0 +1,14 @@
+*A
+
+[小秋] 
+<b style="font-size: 30px;">How this site works</b>
+‎ 
+All dialogue scenes are stored in plain text script files. When the site starts, it fetches and parses these scripts into structured dialogue blocks. Each block contains the character ID, text, and optional overrides such as name, color, or avatar.
+‎ 
+The system then renders scenes as tables, where each row shows the speaker’s avatar and their dialogue. Avatars can also be shown in silhouette mode or with a custom background color.
+‎ 
+Characters can be highlighted: when you select names in the character list, the corresponding dialogue lines are emphasized automatically.
+‎ 
+All data is loaded dynamically from configuration and script files—there is no hard-coded scene. This makes it easy to update, add new characters, or insert more scenes without changing the main code.
+
+**A
